@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Inter' sans-serif;
+    src: url("../fonts/Inter/Inter-Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: 'Epilogue', sans-serif;
+    src: url("../fonts/Epilogue/Epilogue-Bold.ttf") format("truetype"),
+    url("../fonts/Epilogue/Epilogue-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Sherika', sans-serif;
+    src: url("../fonts/Sherika/sherika-extrabold.otf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #41393A;
+    font-family: 'Samsung Sharp Sans';
+    font-style: normal;
+}
+
+h1, ul, p, h2, h4{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Samsung Sharp Sans';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 93px;
+}
+
+h2{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #403A3A;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.heroContents, .heroImage{
+    flex: 1;
+}
+
+.button{
+    background: #7568FE;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 9px 17px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Header */
+header{
+    height: 90px;
+}
+.logo{
+    font-family: 'Epilogue';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #403A3A;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul a{
+    padding: 5px;
+    font-family: 'Epilogue';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav ul a.active{
+    color: #44403D;
+    font-weight: 900;
+}
