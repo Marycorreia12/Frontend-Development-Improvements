@@ -1,15 +1,6 @@
 @font-face {
     font-family: 'Inter' sans-serif;
-    src: url("../fonts/Inter/Inter-Medium.otf") format("truetype");
-}
-@font-face {
-    font-family: 'Epilogue', sans-serif;
-    src: url("../fonts/Epilogue/Epilogue-Bold.ttf") format("truetype"),
-    url("../fonts/Epilogue/Epilogue-Medium.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Sherika', sans-serif;
-    src: url("../fonts/Sherika/sherika-extrabold.otf") format("truetype");
+    src: url("../fonts/Inter/Inter-Medium.otf") format("opentype");
 }
 
 *{
@@ -18,7 +9,7 @@
 
 body{
     color: #41393A;
-    font-family: 'Samsung Sharp Sans';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
 }
 
@@ -28,16 +19,18 @@ h1, ul, p, h2, h4{
 }
 
 h1{
-    font-family: 'Samsung Sharp Sans';
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 60px;
     line-height: 93px;
+    margin-bottom: 20px;
+    width: 594px;
 }
 
 h2{
-    font-family: 'Outfit';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     color: #403A3A;
@@ -64,9 +57,6 @@ ul{
     flex-wrap: wrap;
 }
 
-.heroContents, .heroImage{
-    flex: 1;
-}
 
 .button{
     background: #7568FE;
@@ -83,12 +73,14 @@ ul{
 }
 
 /* Header */
+
 header{
     height: 90px;
 }
+
 .logo{
-    font-family: 'Epilogue';
-    font-weight: 600;
+    font-family: 'Inter';
+    font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: #403A3A;
@@ -103,16 +95,68 @@ header{
 }
 
 .nav ul a{
-    padding: 5px;
-    font-family: 'Epilogue';
-    font-weight: 500;
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
     cursor: pointer;
 }
 
+.nav ul a:hover, .nav ul a.active:hover{
+    background-color: #7568FE;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.nav ul a.active:hover{
+    font-weight: 400;
+}
+
 .nav ul a.active{
     color: #44403D;
-    font-weight: 900;
+    font-weight: 700;
+}
+
+/* Section 1 */
+
+.heroContents{
+    width: 600px;
+}
+
+.gap{
+    gap: 200px;
+    margin: 80px 0;
+}
+
+.collaborate{
+    background: #33A5E4;
+    color: #FFFFFF;
+}
+
+.heroContentsText{
+    position: relative;
+}
+
+.heroContentsText::after{
+    content: url('../images/hero-effect.svg');
+    position: absolute;
+    bottom: 25px;
+    right: 120px;
+
+}
+
+.heroText{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #989898;
+    margin-bottom: 35px;
+}
+
+.heroApps{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
 }
