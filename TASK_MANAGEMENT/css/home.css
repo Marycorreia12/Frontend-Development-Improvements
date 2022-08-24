@@ -56,6 +56,13 @@ ul{
     list-style: none;
 }
 
+.text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #989898;
+}
+
 .container{
     width: 90%;
     margin: 0 auto;
@@ -155,14 +162,9 @@ header{
     position: absolute;
     bottom: 25px;
     right: 120px;
-
 }
 
-.heroText{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    color: #989898;
+.heroContentsText .text{
     margin-bottom: 35px;
 }
 
@@ -191,10 +193,8 @@ header{
 .section3Content .text{
     width: 534px;
     margin: 25px 0;
-    font-weight: 500;
     font-size: 15px;
     line-height: 30px;
-    color: #989898;
 }
 
 .section3Content .cards .card1, .section3Content .cards .card2{
@@ -224,4 +224,17 @@ header{
     font-size: 14px;
     line-height: 23px;
     color: #AFAFAF;
+}
+
+/* Section 5 */
+
+.section5{
+    margin-top: 143px;
+}
+
+.section5Content .text{
+    width: 584px;
+    line-height: 30px;
+    margin: 30px 0 24px 0;
+
 }
