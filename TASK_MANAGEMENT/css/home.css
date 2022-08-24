@@ -229,12 +229,62 @@ header{
 /* Section 5 */
 
 .section5{
-    margin-top: 143px;
+    margin: 143px 0 80px 0;
 }
 
 .section5Content .text{
     width: 584px;
     line-height: 30px;
     margin: 30px 0 24px 0;
-
 }
+
+/* Section 6 */
+
+
+.section6Content{
+    position: relative;
+}
+
+.section6Content p{
+    width: 515px;
+    margin: 30px 0;
+    font-style: italic;
+    font-weight: 499;
+    font-size: 25px;
+    line-height: 40px;
+    color: #403A3A;
+}
+
+.section6Content div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section6Content div strong{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #403A3A;
+}
+
+.section6Content div small{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #8A7FFF;
+}
+
+.section6Content .userSection .arrowButtons{
+    position: absolute;
+    right: 14px;
+    bottom: 49px;
+    display: flex;
+    gap: 20px;
+}
+
+.section6Content .arrowButtons img{
+    width: 50px;
+    height: 50px;
+}
+
