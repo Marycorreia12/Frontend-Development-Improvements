@@ -50,7 +50,7 @@ h2{
 p, a{
     font-family: 'Inter';
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--black-color);
 }
 
 .button{
@@ -99,6 +99,7 @@ header .navbar ul{
 header .navbar ul li a{
     font-size: 18px;
     line-height: 22px;
+    color: var(--primary-color);
 }
 
 header .navbar ul li .nactive{
@@ -123,8 +124,27 @@ header .navbar ul li .nactive:hover{
 .hero-contents p{
     font-size: 20px;
     line-height: 33px;
-    color: #000000;
     opacity: 0.5;
     width: 510px;
     margin-bottom: 40px;
+}
+
+/* Benefits */
+
+.benefits{
+    margin-bottom: 80px;
+}
+
+.benefits .benefits-contents{
+    width: 500px;
+}
+
+.benefits .benefits-contents h2{
+    margin-bottom: 20px;
+}
+
+.benefits .benefits-contents p{
+    font-size: 16px;
+    line-height: 30px;
+    opacity: 0.5;
 }
