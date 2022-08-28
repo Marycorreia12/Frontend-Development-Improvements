@@ -109,3 +109,22 @@ header .navbar ul li .nactive:hover{
     opacity: 1;
     transition: .2s ease-in-out;
 }
+
+/* Hero */
+
+.hero{
+    min-height: 90vh;
+}
+
+.hero-contents h1{
+    margin-bottom: 15px;
+}
+
+.hero-contents p{
+    font-size: 20px;
+    line-height: 33px;
+    color: #000000;
+    opacity: 0.5;
+    width: 510px;
+    margin-bottom: 40px;
+}
