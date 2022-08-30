@@ -48,6 +48,7 @@ h2{
     line-height: 50px;
     color: var(--primary-color);
     position: relative;
+    display: inline-block
 }
 
 h2.yellow-border::after{
@@ -216,4 +217,5 @@ header .navbar ul li .nactive:hover{
     color: #90A663;
     margin-top: 5px;
 }
+
 
