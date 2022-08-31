@@ -72,6 +72,15 @@ p, a{
     color: var(--black-color);
 }
 
+.price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #90A663;
+}
+
 .button{
     background: #27292E;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -105,7 +114,6 @@ p, a{
 .margin-bottom{
     margin-bottom: 80px;
 }
-
 
 /* Header */
 
@@ -159,10 +167,6 @@ header .navbar ul li .nactive:hover{
 }
 
 /* Benefits Section*/
-
-/* .benefits{
-    margin-bottom: 80px;
-} */
 
 .benefits .benefits-contents{
     width: 500px;
@@ -256,5 +260,84 @@ header .navbar ul li .nactive:hover{
     margin-bottom: 20px;
     text-align: start;
 }
+
+/* Best selling section */
+
+.best-selling{
+    position: relative;
+}
+
+.best-selling h2{
+    margin-bottom: 20px;
+}
+
+.best-selling p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.best-selling-contents{
+    justify-content: center;
+    gap: 30px;
+}
+
+.best-selling-contents figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.best-selling-contents figcaption h4{
+    color: #606060;
+    margin-bottom: 5px;
+}
+
+.best-selling-contents figcaption ul{
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.best-selling-contents figcaption ul li{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #606060;
+    opacity: 0.7;
+    position: relative;
+}
+
+.best-selling-contents figcaption ul li + li::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    height: 10px;
+    border-left: 2px solid #606060;
+}
+
+.arrow-left{
+    position: absolute;
+    top: 60%;
+    left: 60px;
+}
+
+.arrow-right{
+    position: absolute;
+    top: 60%;
+    right: 50px;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    opacity: 0.2;
+    transition: .2s ease-in-out;
+}
+
+
+
 
 
