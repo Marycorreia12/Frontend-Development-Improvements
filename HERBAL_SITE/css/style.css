@@ -21,7 +21,7 @@ body{
 }
 
 img{
-    display: block;
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -338,6 +338,74 @@ header .navbar ul li .nactive:hover{
 }
 
 /* Testimonials section */
+
+.testimonials{
+    text-align: center;
+    position: relative;
+}
+
+.testimonials p{
+    margin: 30px 0 40px 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--black-color);
+    opacity: 0.5;
+}
+
+.testimonials-contents{
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.testimonials-contents figure{
+    width: 280px;
+}
+
+.testimonials-contents figure figcaption{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center; 
+    color: #010000;
+    margin: 20px 0;
+}
+
+.testimonials-contents figure figcaption strong{
+    display: block;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonials-contents figure figcaption small{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.pagination-container{
+    width: 59px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.pagination-btn{
+    width: 15px;
+    height: 15px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+
+.pagination-btn:hover{
+    background: #F8AD1F;
+    transition: .2s ease-in-out;
+}
+
+/* Newsletter section */
+
 
 
 
