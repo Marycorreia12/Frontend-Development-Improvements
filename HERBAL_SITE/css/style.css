@@ -60,6 +60,12 @@ h2.yellow-border::after{
     width: 100%;
 }
 
+h4{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 p, a{
     font-family: 'Inter';
     font-weight: 500;
@@ -216,6 +222,39 @@ header .navbar ul li .nactive:hover{
     line-height: 17px;
     color: #90A663;
     margin-top: 5px;
+}
+
+/* Signature Flavors section */
+
+.signature-flavors{
+    text-align: center;
+}
+
+.signature-flavors .flavors{
+    margin-top: 40px;
+}
+
+.signature-flavors .flavors-images{
+    gap: 30px;
+}
+
+.signature-flavors .flavors-contents{
+   width: 473px;
+}
+
+.signature-flavors .flavors-contents article h4{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.signature-flavors .flavors-contents article p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C4C4C;
+    margin-bottom: 20px;
+    text-align: start;
 }
 
 
