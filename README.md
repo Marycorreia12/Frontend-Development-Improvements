@@ -1,4 +1,5 @@
 # FD-trainning
+Some projects i've been creating during my  frontend developer trainning from Brainnest company.
 ## Herbal Tea Website
 https://herbaltea.netlify.app/
 
