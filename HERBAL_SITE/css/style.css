@@ -473,8 +473,66 @@ form .button-form{
 form .button-form img{
     width: 20px;
     color: #FFFFFF;
+}
+
+/* Footer section */
+
+.footer-logo a{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: 'Inter';
+}
 
 
+.footer-logo p{
+    width: 350px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--black-color);
+    opacity: 0.4;
+    margin: 20px 0 25px 0;
+}
+
+.footer-list.flex{
+    gap: 157px;
+    align-items: flex-start;
+}
+
+.footer-list ul li{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--primary-color);
+    opacity: 0.4;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-list ul li.bold{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    opacity: 1;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--black-color);
+    opacity: 0.4;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.border{
+    margin-top: 50px;
+    border-bottom: 0.4px solid #000000;
+    opacity: 0.2;
 }
 
 
