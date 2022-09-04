@@ -75,14 +75,28 @@ p, a{
     color: var(--black-color);
 }
 
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C4C4C;
+}
+
 .price{
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: var(--light-green-color);
 }
+
+strong{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2F3327;
+}
+
 
 .button{
     background: #27292E;
@@ -204,13 +218,6 @@ header .navbar ul li .nactive:hover{
     margin-bottom: 20px;
 }
 
-.blends-images figure figcaption .description strong{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #2F3327;
-}
-
 .blends-images figure figcaption .description a{
     font-style: italic;
     font-weight: 300;
@@ -229,6 +236,36 @@ header .navbar ul li .nactive:hover{
     line-height: 17px;
     color: var(--light-green-color);
     margin-top: 5px;
+}
+
+/* Popular Offers section */
+
+.popular-offers-contents h2{
+    margin-bottom: 30px;
+}
+
+.popular-offers-contents .list{
+    width: 445px;
+}
+
+.popular-offers-contents .list .contents{
+    margin-bottom: 20px;
+}
+
+.popular-offers-contents .list .contents .items{
+    margin-bottom: 5px;
+}
+
+.popular-offers-contents .list .contents .items .price{
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.popular-offers-contents .list .contents .line{
+    border-bottom: 0.5px solid #000000;
+    opacity: 0.4;
+    width: 60%;
+    padding: 0 10px;
 }
 
 /* Signature Flavors section */
@@ -256,10 +293,6 @@ header .navbar ul li .nactive:hover{
 }
 
 .signature-flavors .flavors-contents article p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #4C4C4C;
     margin-bottom: 20px;
     text-align: start;
 }
