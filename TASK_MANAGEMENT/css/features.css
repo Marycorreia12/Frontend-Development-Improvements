@@ -35,7 +35,7 @@
     width: 544px;
 }
 
-/* Section 2 / 3*/
+/* Section 2 / 3 / 4 / 5*/
 
 .section-subtasks{
     margin-bottom: 80px;
@@ -73,6 +73,16 @@
 .section-subtasks .list li p{
     color: #343231;
     margin-top: 15px;
+}
+
+.learn-more{
+    font-size: 14px;
+    line-height: 25px;
+    color: #3D76EA;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 
 
