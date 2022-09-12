@@ -1,0 +1,36 @@
+.features-hero-bg{
+    position: relative;
+}
+
+.features-hero-bg img{
+    width: 100%;
+}
+
+.features-hero-contents{
+    position: absolute;
+    top: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.features-hero-contents h1{
+    font-size: 50px;
+    width: 100%;
+}
+
+.features-hero-contents p{
+    line-height: 33px;
+    width: 605px;
+}
+
+.features-video{
+    position: absolute;
+    top: 360px;
+    right: 20px;
+    width: 544px;
+}
+
