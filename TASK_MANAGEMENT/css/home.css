@@ -228,21 +228,21 @@ header{
     color: #AFAFAF;
 }
 /* Section 4 */
-.section4Content{
+.section-according-content{
     width: 528px;
 }
 
-.section4Content h2{
+.section-according-content h2{
     width: 386px;
     margin-bottom: 20px;
 }
 
-.section4Content .text{
+.section-according-content .text{
    line-height: 30px;
    margin-bottom: 30px;
 }
 
-.section4Content .list li{
+.section-according-content .list li{
     background: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -256,28 +256,28 @@ header{
     position: relative;
  }
 
- .section4Content .list li::after{
+ .section-according-content .list li::after{
     content: url('../images/arrow-dowm.svg');
     position: absolute;
     top: 24px;
     right: 20px;
  }
  
- .section4Content .list li.purple::after{
+ .section-according-content .list li.purple::after{
     content: url('../images/arrow-up.svg');
     position: absolute;
     top: 24px;
     right: 20px;
  }
 
- .section4Content .list li.purple{
+ .section-according-content .list li.purple{
     padding-bottom: 11px;
     background: #7568FE;
     border-radius: 10px;
     color: #FFFFFF;
  }
 
- .section4Content .list li p{
+ .section-according-content .list li p{
     margin-top: 30px;
     font-weight: 499;
     font-size: 14px;
