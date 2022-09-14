@@ -1,0 +1,101 @@
+/* Section hero */
+.faq-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 116px 0 80px 0;
+    text-align: center;
+}
+
+.faq-hero-title h1{
+    font-size: 50px;
+    width: 671px;
+    margin-bottom: 0;
+}
+
+.faq-hero-title .text{
+    line-height: 33px;
+    width: 605px;
+    margin: 10px auto 30px auto;
+    text-align: center;
+}
+
+.faq-hero-image{
+    position: relative;
+}
+
+.faq-hero-image::before{
+    content: url('../images/faq-hero-effect.png');
+    position: absolute;
+    bottom: -300px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Section 2/3 */
+
+.faq-section2, .faq-section3{
+    margin-bottom: 80px;
+}
+
+.faq-section2-contents, .faq-section3-contents{
+    width: 534px;
+}
+
+.faq-section2-contents .text, .faq-section3-contents .text{
+    line-height: 34px;
+    margin-top: 20px;
+}
+
+/* Section 4 */
+
+.faq-section4{
+    margin-bottom: 80px;
+}
+
+.faq-section4-title{
+    text-align: center;
+}
+
+.faq-section4-title .text{
+    line-height: 34px;
+    margin: 20px auto 40px auto;
+    width: 753px;
+}
+
+.faq-section4-information.flex{
+    justify-content: center;
+    align-items: center;
+    gap: 134px;
+}
+
+.faq-section4-information .info{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.faq-section4-information .info img{
+    width: 150px;
+}
+
+.faq-section4-information .info-text{
+    margin-top: 30px;
+}
+
+.faq-section4-information .info-text strong{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.faq-section4-information .info-text p{
+    margin-top: 10px;
+    line-height: 34px;
+}
