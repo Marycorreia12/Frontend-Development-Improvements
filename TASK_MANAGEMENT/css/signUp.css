@@ -68,7 +68,7 @@ input::placeholder{
 
 input:focus{
     outline: none;
-    border: 0.5px solid #2196F3;
+    border: 1px solid #2196F3;
 }
 
 .sign-up-list ul li{
@@ -119,7 +119,7 @@ form .button{
     margin-bottom: 20px;
 }
 
-form .terms-consditions{
+form .terms-conditions{
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
