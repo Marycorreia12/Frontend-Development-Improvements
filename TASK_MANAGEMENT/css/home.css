@@ -232,6 +232,12 @@ header{
     color: #AFAFAF;
 }
 /* Section 4 */
+
+.section4{
+    display: flex;
+    justify-content: space-between;
+}
+
 .section-according-content{
     width: 528px;
 }
@@ -258,6 +264,12 @@ header{
     color: #5B5555;
     cursor: pointer;
     position: relative;
+    transition: .4s;
+ }
+
+ .section-according-content .list li:hover{
+    background-color: #7568FE;
+    color: #ffffff;
  }
 
  .section-according-content .list li::after{
@@ -267,18 +279,11 @@ header{
     right: 20px;
  }
  
- .section-according-content .list li.purple::after{
+ .section-according-content .list li.text-show::after{
     content: url('../images/arrow-up.svg');
     position: absolute;
     top: 24px;
     right: 20px;
- }
-
- .section-according-content .list li.purple{
-    padding-bottom: 11px;
-    background: #7568FE;
-    border-radius: 10px;
-    color: #FFFFFF;
  }
 
  .section-according-content .list li p{
@@ -287,10 +292,14 @@ header{
     font-size: 14px;
     line-height: 25px;
     color: #E8E7EF;
+    max-height: 0;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
  }
 
- .text-hidden{
-    display: none;
+.text-show{
+    display: block;
  }
 
 /* Section 5 */
