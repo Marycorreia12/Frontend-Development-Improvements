@@ -40,6 +40,13 @@
 .section-subtasks{
     margin-bottom: 80px;
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.section-subtasks .subtasks-image{
+    height: 417px;
 }
 
 .section-subtasks h2{
@@ -58,12 +65,19 @@
     font-weight: 600;
 }
 
-.section-subtasks .list li.orange{
-    background: #FBE3E0;
+.section-according-content .list li:hover{
+    background-color: #FBE3E0;
     color: #1F1F1F;
-}
+ }
 
-.section-subtasks .list li.orange::after{
+ .section-subtasks .list li::after{
+    content: url('../images/arrow-dowm.svg');
+    position: absolute;
+    top: 24px;
+    right: 20px;
+ }
+
+.section-subtasks .list li.text-show::after{
     content: url('../images/arrow-up-1.svg');
     position: absolute;
     top: 24px;
@@ -73,6 +87,10 @@
 .section-subtasks .list li p{
     color: #343231;
     margin-top: 15px;
+    max-height: 0;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .learn-more{

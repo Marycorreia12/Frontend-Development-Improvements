@@ -8,11 +8,9 @@ accordion.forEach(item => {
         if (text.style.display === "block") {
             text.style.display = "none";
             item.style.background = "#FFFFFF";
-            item.style.color = "#5B5555";
           } else {
             text.style.display = "block";
-            item.style.background = "#7568FE";
-            item.style.color = "#FFFFFF";
+            item.style.background = "#FBE3E0";
           }
 
           if (text.style.maxHeight) {

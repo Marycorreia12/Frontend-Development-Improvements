@@ -11,6 +11,7 @@
 
 :root{
     --primary-color: #7568FE;
+    --black-color: #403A3A;
 }
 
 body{
@@ -39,7 +40,7 @@ h2{
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    color: #403A3A;
+    color: var(--black-color);
 }
 
 h4{
@@ -47,7 +48,7 @@ h4{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #403A3A;
+    color: var(--black-color);
 }
 
 a{
@@ -107,7 +108,7 @@ header{
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    color: #403A3A;
+    color: var(--black-color);
     display: flex;
     align-items: center;
     gap: 7px;
@@ -268,7 +269,7 @@ header{
  }
 
  .section-according-content .list li:hover{
-    background-color: #7568FE;
+    background-color: var(--primary-color);
     color: #ffffff;
  }
 
@@ -327,7 +328,7 @@ header{
     font-weight: 499;
     font-size: 25px;
     line-height: 40px;
-    color: #403A3A;
+    color: var(--black-color);
 }
 
 .section6Content div:first-child{
@@ -340,7 +341,7 @@ header{
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
-    color: #403A3A;
+    color: var(--black-color);
 }
 
 .section6Content div small{

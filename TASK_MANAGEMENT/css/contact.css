@@ -76,7 +76,6 @@ strong{
     margin-top: 10px;
 }
 
-
 /* Form  */
 
 .form{
@@ -130,7 +129,6 @@ input[type="email"]:focus{
     outline: none;
     border: 1px solid #2196F3;
 }
-
 
 form .button{
     width: 100%;
