@@ -20,7 +20,7 @@
     right: 0;
     width: 540px;
     height: 100%;
-    background: #FFFFFF;
+    background: var(--white-color);
     overflow: hidden;
     display: flex;
     flex-direction: column;
