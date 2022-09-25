@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/products.js" defer></script>
+    <script src="./js/app.js" defer></script>
     <title>Herbal Tea</title>
 </head>
 <body>
-    <header class="container flex">
-        <a href="/index.html" class="logo">Herbal Tea</a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="http://" class="active">Home</a></li>
-                <li><a href="http://" class="nactive">About Us</a></li>
-                <li><a href="http://" class="nactive">Products</a></li>
-                <li><a href="http://" class="nactive">Contact Us</a></li>
-            </ul>
-        </nav>
-        <img src="./images/shopping-bag.svg" alt="shopping bag image">
+    <header>
+        <div class="container flex header">
+            <a href="/index.html" class="logo">Herbal Tea</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://" class="active">Home</a></li>
+                    <li><a href="http://" class="nactive">About Us</a></li>
+                    <li><a href="http://" class="nactive">Products</a></li>
+                    <li><a href="http://" class="nactive">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cards-info">
+                <img src="./images/shopping-bag.svg" alt="shopping bag image"><span class="units">0</span>
+            </a>
+        </div>
     </header>
     <main class="main">
+        <section class="cards-container">
+            <div class="cards-items-container">
+                <!-- Render the items -->
+            </div>
+            <div class="cards-footer flex">
+                <p class="subTotal"></p>
+                <button class="button">Checkout</button>
+            </div>
+        </section>
         <section class="hero container flex">
             <div class="hero-contents">
                 <h1>Embrance Wellness With Handcrafted Blends</h1>
@@ -51,46 +66,7 @@
                 </div>
             </div>
             <div class="blends-images flex">
-                <figure>
-                    <img src="./images/fruit-tea.svg" alt="Fruit Tea Image" class="blends-image">
-                    <figcaption>
-                        <div class="flex description">
-                            <strong class="strong">White Peony</strong>
-                            <a>Add to Cart<img src="./images/arrow_forward.svg" alt="Arrow Forward"></a>
-                        </div>
-                        <small class="price">$37.05</small>
-                    </figcaption> 
-                </figure>
-                <figure>
-                    <img src="./images/yellow-tea.svg" alt="Yellow Tea Image" class="blends-image">
-                    <figcaption>
-                        <div class="flex description">
-                            <strong class="strong">Exotic Tea</strong>
-                            <a>Add to Cart<img src="./images/arrow_forward.svg" alt="Arrow Forward"></a>
-                        </div>
-                        <small class="price">$26.00</small>
-                    </figcaption> 
-                </figure>
-                <figure>
-                    <img src="./images/exotic-tea.svg" alt="Exotic Tea Image" class="blends-image">
-                    <figcaption>
-                        <div class="flex description">
-                            <strong class="strong">Yellow Tea</strong>
-                            <a>Add to Cart<img src="./images/arrow_forward.svg" alt="Arrow Forward"></a>
-                        </div>
-                        <small class="price">$21.00</small>
-                    </figcaption> 
-                </figure>
-                <figure>
-                    <img src="./images/white-peony.svg" alt="White Peony Image" class="blends-image">
-                    <figcaption>
-                        <div class="flex description">
-                            <strong class="strong">Fruit Tea</strong>
-                            <a>Add to Cart<img src="./images/arrow_forward.svg" alt="Arrow Forward"></a>
-                        </div>
-                        <small class="price">$39.09</small>
-                    </figcaption> 
-                </figure>
+                <!-- Render the products -->
             </div>
         </section>
         <section class="popular-offers container flex">
@@ -166,9 +142,9 @@
             <h2 class="yellow-border">Best Selling</h2>
             <p>Get inspired by customer picks & sip the latest & greatest teas.</p>
             <div class="best-selling-contents flex">
-                <figure>
+                <div>
                     <img src="./images/black-teas.svg" alt="Black Teas">
-                    <figcaption>
+                    <div>
                         <h4>Black Teas</h4>
                         <small class="price">$19.85</small>
                         <ul class="flex">
@@ -176,11 +152,11 @@
                             <li>50 cups</li>
                             <li>Green Tea</li>
                         </ul>
-                    </figcaption>
-                </figure>
-                <figure>
+                    </div>
+                </div>
+                <div>
                     <img src="./images/oolong-tea.svg" alt="Black Teas">
-                    <figcaption>
+                    <div>
                         <h4>Oolong Tea</h4>
                         <small class="price">$19.85</small>
                         <ul class="flex">
@@ -188,11 +164,11 @@
                             <li>50 cups</li>
                             <li>Green Tea</li>
                         </ul>
-                    </figcaption>
-                </figure>
-                <figure>
+                    </div>
+                </div>
+                <div>
                     <img src="./images/matcha.svg" alt="Black Teas">
-                    <figcaption>
+                    <div>
                         <h4>Matcha</h4>
                         <small class="price">$19.85</small>
                         <ul class="flex">
@@ -200,11 +176,11 @@
                             <li>50 cups</li>
                             <li>Green Tea</li>
                         </ul>
-                    </figcaption>
-                </figure>
-                <figure>
+                    </div>
+                </div>
+                <div>
                     <img src="./images/chamomile.svg" alt="Black Teas">
-                    <figcaption>
+                    <div>
                         <h4>Chamomile</h4>
                         <small class="price">$19.85</small>
                         <ul class="flex">
@@ -212,8 +188,8 @@
                             <li>50 cups</li>
                             <li>Green Tea</li>
                         </ul>
-                    </figcaption>
-                </figure>
+                    </div>
+                </div>
             </div>
             <div class="arrows_forward">
                 <img src="./images/arrow_forward_ios 2.svg" alt="Arrow forward Left" class="arrow-left">
@@ -224,33 +200,33 @@
             <h2 class="yellow-border">Testimonials</h2>
             <p>Read what our customers have to say.</p>
             <div class="flex testimonials-contents">
-                <figure>
+                <div>
                     <img src="./images/avatar1.svg" alt="User">
-                    <figcaption>Your teas are the best.Ordering is quickly,
+                    <div>Your teas are the best.Ordering is quickly,
                        and unstressful.Theteas arrive on time and
                        well packed with 
                        <Strong>Ravi Shanker</Strong>
                        <small>Usa</small>
-                    </figcaption>
-                </figure>
-                <figure>
+                    </div>
+                </div>
+                <div>
                     <img src="./images/avatar2.svg" alt="User">
-                    <figcaption>Your teas are the best.Ordering is quickly,
+                    <div>Your teas are the best.Ordering is quickly,
                         and unstressful.Theteas arrive on time and
                         well packed with
                         <Strong>Ravi Shanker</Strong>
                         <small>Usa</small>
-                    </figcaption>
-                </figure>
-                <figure>
+                    </div>
+                </div>
+                <div>
                     <img src="./images/avatar3.svg" alt="User">
-                    <figcaption>Your teas are the best.Ordering is quickly,
+                    <div>Your teas are the best.Ordering is quickly,
                         and unstressful.Theteas arrive on time and
                         well packed with 
                         <Strong>Ravi Shanker</Strong>
                         <small>Usa</small>
-                    </figcaption>
-                </figure>
+                    </div>
+                </div>
             </div>
             <div class="pagination-container">
                 <span class="pagination-btn"></span>
