@@ -1,4 +1,3 @@
-const productsEl = document.querySelector('.blends-images');
 const cartItemsEl = document.querySelector('.cards-items-container');
 const subTotalEl = document.querySelector('.subTotal');
 const totalItemsCart = document.querySelector(".cards-info .units");
@@ -8,27 +7,6 @@ const card = document.querySelector('.cards-container');
 cardInfo.addEventListener('click', () => {
     card.classList.toggle('show-cards-container');
 });
-
-/* Render the products */
-function renderProducts(){
-    products.forEach(product => {
-        productsEl.innerHTML += `
-        <div class="blends-image-container">
-            <img src="${product.img}" alt="Fruit Tea Image" class="blends-image">
-            <div class="blends-image-description">
-                <div class="flex description">
-                    <strong class="strong">${product.name}</strong>
-                    <small class="price">${product.price}</small>
-                </div>
-                <span class="add-to-cart"><img src="./images/cart.png" alt="Cart Image" onClick="addToCart(${product.id})"></span>
-                <span class="add-to-wishlist"><img src="./images/arrow_forward.svg" alt="Wishlist Image"></span>
-            </div> 
-        </div>
-        `;
-    })
-} 
-
-renderProducts();
 
 /* Cart Array */
 let cart = JSON.parse(localStorage.getItem("CART")) || [];

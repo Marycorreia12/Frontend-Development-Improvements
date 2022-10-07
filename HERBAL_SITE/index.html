@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/products.js" defer></script>
     <script src="./js/app.js" defer></script>
+    <script src="./js/testimonials.js" defer></script>
+    <script src="./js/best-selling.js" defer></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <title>Herbal Tea</title>
 </head>
 <body>
@@ -60,13 +63,14 @@
         <section class="blends container margin-bottom">
             <div class="blends-pagination flex">
                 <h2 class="yellow-border">Our Unique Tea Blends</h2>
-                <div class="arrows flex">
-                    <img src="./images/arrow_Left.svg" alt="Arrow Left">
-                    <img src="./images/arrow_Right.svg" alt="Arrow Right">
+                <div class="arrows">
+                    <img src="./images/arrow_Left.svg" alt="Arrow Left" class="swiper-button-next">
+                    <img src="./images/arrow_Right.svg" alt="Arrow Right" class="swiper-button-prev">
                 </div>
             </div>
-            <div class="blends-images flex">
-                <!-- Render the products -->
+            <div class="swiper blends-container ">
+                <div class="swiper-wrapper blends-images">
+                </div>
             </div>
         </section>
         <section class="popular-offers container flex">
@@ -111,7 +115,7 @@
         </section>
         <section class="signature-flavors container margin-top margin-bottom">
             <h2 class="yellow-border">Discover The Magic Of Tea,<br>Learn About Our Signature Flavors</h2>
-                <div class="flex flavors">
+                <div class="flavors flex">
                     <div class="flex flavors-images">
                         <img src="./images/tea1.svg" alt="Couple Tea section 5">
                         <img src="./images/tea2.svg" alt="Couple Tea section 5">
@@ -141,98 +145,176 @@
         <section class="best-selling container margin-bottom">
             <h2 class="yellow-border">Best Selling</h2>
             <p>Get inspired by customer picks & sip the latest & greatest teas.</p>
-            <div class="best-selling-contents flex">
-                <div>
-                    <img src="./images/black-teas.svg" alt="Black Teas">
-                    <div>
-                        <h4>Black Teas</h4>
-                        <small class="price">$19.85</small>
-                        <ul class="flex">
-                            <li>100g</li>
-                            <li>50 cups</li>
-                            <li>Green Tea</li>
-                        </ul>
+            <div class="best-selling-contents swiper">
+                <div class="swiper-wrapper best-selling-container">
+                  <!--  <div class="swiper-slide slide">
+                        <img src="./images/black-teas.svg" alt="Black Teas">
+                        <div>
+                            <h4>Black Teas</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./images/oolong-tea.svg" alt="Black Teas">
-                    <div>
-                        <h4>Oolong Tea</h4>
-                        <small class="price">$19.85</small>
-                        <ul class="flex">
-                            <li>100g</li>
-                            <li>50 cups</li>
-                            <li>Green Tea</li>
-                        </ul>
+                    <div class="swiper-slide slide">
+                        <img src="./images/oolong-tea.svg" alt="Black Teas">
+                        <div>
+                            <h4>Oolong Tea</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./images/matcha.svg" alt="Black Teas">
-                    <div>
-                        <h4>Matcha</h4>
-                        <small class="price">$19.85</small>
-                        <ul class="flex">
-                            <li>100g</li>
-                            <li>50 cups</li>
-                            <li>Green Tea</li>
-                        </ul>
+                    <div class="swiper-slide slide">
+                        <img src="./images/matcha.svg" alt="Black Teas">
+                        <div>
+                            <h4>Matcha</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="./images/chamomile.svg" alt="Black Teas">
-                    <div>
-                        <h4>Chamomile</h4>
-                        <small class="price">$19.85</small>
-                        <ul class="flex">
-                            <li>100g</li>
-                            <li>50 cups</li>
-                            <li>Green Tea</li>
-                        </ul>
+                    <div class="swiper-slide slide">
+                        <img src="./images/chamomile.svg" alt="Black Teas">
+                        <div>
+                            <h4>Chamomile</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="swiper-slide slide">
+                        <img src="./images/black-teas.svg" alt="Black Teas">
+                        <div>
+                            <h4>Black Teas</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img src="./images/oolong-tea.svg" alt="Black Teas">
+                        <div>
+                            <h4>Oolong Tea</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img src="./images/matcha.svg" alt="Black Teas">
+                        <div>
+                            <h4>Matcha</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <img src="./images/chamomile.svg" alt="Black Teas">
+                        <div>
+                            <h4>Chamomile</h4>
+                            <small class="price">$19.85</small>
+                            <ul class="flex">
+                                <li>100g</li>
+                                <li>50 cups</li>
+                                <li>Green Tea</li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="arrows_forward">
-                <img src="./images/arrow_forward_ios 2.svg" alt="Arrow forward Left" class="arrow-left">
-                <img src="./images/arrow_forward_ios 1.svg" alt="Arrow forward Right" class="arrow-right">
-            </div>
+            <div class="swiper-button-next arrow-left"></div>
+            <div class="swiper-button-prev arrow-right"></div>
         </section>
         <section class="testimonials container margin-bottom">
             <h2 class="yellow-border">Testimonials</h2>
             <p>Read what our customers have to say.</p>
-            <div class="flex testimonials-contents">
-                <div>
-                    <img src="./images/avatar1.svg" alt="User">
-                    <div>Your teas are the best.Ordering is quickly,
-                       and unstressful.Theteas arrive on time and
-                       well packed with 
-                       <Strong>Ravi Shanker</Strong>
-                       <small>Usa</small>
-                    </div>
-                </div>
-                <div>
-                    <img src="./images/avatar2.svg" alt="User">
-                    <div>Your teas are the best.Ordering is quickly,
-                        and unstressful.Theteas arrive on time and
-                        well packed with
-                        <Strong>Ravi Shanker</Strong>
-                        <small>Usa</small>
-                    </div>
-                </div>
-                <div>
-                    <img src="./images/avatar3.svg" alt="User">
-                    <div>Your teas are the best.Ordering is quickly,
+            <div class="testimonials-contents swiper">
+                <div class="swiper-wrapper users-contents">
+                   <!--  <div class="swiper-slide contents">
+                        <img src="./images/avatar1.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
                         and unstressful.Theteas arrive on time and
                         well packed with 
                         <Strong>Ravi Shanker</Strong>
                         <small>Usa</small>
+                        </div>
                     </div>
+                    <div class="swiper-slide contents">
+                        <img src="./images/avatar2.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
+                            and unstressful.Theteas arrive on time and
+                            well packed with
+                            <Strong>Ravi Shanker</Strong>
+                            <small>Usa</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide contents">
+                        <img src="./images/avatar3.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
+                            and unstressful.Theteas arrive on time and
+                            well packed with 
+                            <Strong>Ravi Shanker</Strong>
+                            <small>Usa</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide contents">
+                        <img src="./images/avatar1.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
+                        and unstressful.Theteas arrive on time and
+                        well packed with 
+                        <Strong>Ravi Shanker</Strong>
+                        <small>Usa</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide contents">
+                        <img src="./images/avatar2.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
+                            and unstressful.Theteas arrive on time and
+                            well packed with
+                            <Strong>Ravi Shanker</Strong>
+                            <small>Usa</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide contents">
+                        <img src="./images/avatar3.svg" alt="User">
+                        <div>Your teas are the best.Ordering is quickly,
+                            and unstressful.Theteas arrive on time and
+                            well packed with 
+                            <Strong>Ravi Shanker</Strong>
+                            <small>Usa</small>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="pagination-container">
+            <div class="swiper-pagination"></div>
+            <!-- <div class="pagination-container">
                 <span class="pagination-btn"></span>
                 <span class="pagination-btn"></span>
                 <span class="pagination-btn"></span>
-            </div>
+            </div> -->
         </section>
         <section class="newsletter">
             <img src="./images/newsletter.svg" alt="Newsletter">
@@ -251,7 +333,7 @@
         </section>
     </main>
     <footer class="container margin-top margin-bottom">
-        <section class="flex">
+        <section class="footer flex">
             <div class="footer-logo">
                 <a href="./index.html">Herbal Tea</a>
                 <p>Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do
@@ -293,5 +375,6 @@
         <div class="border"></div>
         <p class="copyright">© Copyright 2022 by Product Ream. All Rights Reserved.</p>
     </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
 </body>
 </html> 
