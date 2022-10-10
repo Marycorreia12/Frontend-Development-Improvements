@@ -9,6 +9,7 @@
     <script src="./js/app.js" defer></script>
     <script src="./js/testimonials.js" defer></script>
     <script src="./js/best-selling.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <title>Herbal Tea</title>
 </head>
@@ -24,9 +25,16 @@
                     <li><a href="http://" class="nactive">Contact Us</a></li>
                 </ul>
             </nav>
-            <a href="#" class="cards-info">
-                <img src="./images/shopping-bag.svg" alt="shopping bag image"><span class="units">0</span>
-            </a>
+            <div class="flex">
+                <div class="menu-bar-container">
+                    <div class="menu-bar bar1"></div>
+                    <div class="menu-bar bar2"></div>
+                    <div class="menu-bar bar3"></div>
+                </div>
+                <a href="#" class="cards-info">
+                    <img src="./images/shopping-bag.svg" alt="shopping bag image"><span class="units">0</span>
+                </a>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -376,5 +384,21 @@
         <p class="copyright">© Copyright 2022 by Product Ream. All Rights Reserved.</p>
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.querySelector(".navbar ul").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script>
 </body>
 </html> 
