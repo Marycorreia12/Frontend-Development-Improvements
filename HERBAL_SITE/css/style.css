@@ -21,6 +21,7 @@ body{
     font-family: var(--font-family);
     font-style: var(--font-style);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -623,11 +624,12 @@ header .cards-info{
 
 .newsletter{
     position: relative;
+    overflow: hidden;
 }
 
 .newsletter img{
-    width: 100%;
-    min-height: 300px;
+    position: relative;
+    min-width: 100%;
 }
 
 .newsletter-contents{
@@ -685,6 +687,7 @@ form .button-form{
 
 form .button-form img{
     width: 20px;
+    height: 20px;
     color: #FFFFFF;
 }
 
