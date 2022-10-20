@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  overflow-x: hidden;
+}
+
+h2.line{
+  position: relative;
+  display: inline-block;
+}
+
+h2.line::after{
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  border-bottom: 4px solid #F8AD1F;
+}
+
+.text-subtitle{
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.pagination-container{
+  width: 59px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.pagination-btn{
+  width: 15px;
+  height: 15px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+}
+
+.pagination-btn:hover{
+  background: #F8AD1F;
+  transition: .2s ease-in-out;
+} 
+
+.active-btn{
+  background: #F8AD1F;
+}
+
+.colour-picker{
+  font-size: 14px;
+  line-height: 17px;
+  color: #90A663;
+  font-weight: 400;
+}
+
+.bi-arrow-left-short:hover, .bi-arrow-right-short:hover{
+  opacity: 0.2;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}

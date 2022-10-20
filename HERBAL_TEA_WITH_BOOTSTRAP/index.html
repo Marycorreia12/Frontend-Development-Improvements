@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Herbal Tea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top pe-4">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bold" href="#">Herbal</a>
+          <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navmenu"  
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#24262B" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero-section min-vh-90 py-5 mt-5 text-center text-md-start">
+        <div class="container">
+          <div class="d-md-flex align-items-center justify-content-between">
+            <div class="col-md-8">
+              <h1 class="text-title mb-2 display-5 lh-base fw-bold">Embrance Wellness With
+                Handcrafted Blends
+              </h1>
+              <p class="text-subtitle mb-4 lead lh-base">
+                Mindfully is tea for every occassions and everyone.<br />
+                just pick your choice for your loved one
+              </p>
+              <a class="btn btn-dark btn-lg" href="#" role="button" target="_blank">Read More</a>
+            </div>
+            <img class="col-md-4 d-none d-md-block"
+              alt="Hero Image"
+              src="public/playground_assets/hero-image.png"
+            />
+          </div>
+        </div>
+       
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="mb-5 text-center text-md-start">
+        <div class="container">
+          <div class="row gy-3 align-items-center justify-content-between">
+            <div class="col-md-7">
+              <img
+              alt="Benefits Image"
+              src="public/playground_assets/benefits.png"
+              class="mb-3"
+              />
+            </div>
+            <div class="col-md-5">
+              <h2 class="mb-3 lh-base">Health Benefits of Drinking Tea Regularly</h2>
+              <p class="lead lh-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vulputate mi sit amet mauris commodo quis imperdiet massa.
+                Massa tincidunt nunc pulvinar sapien et ligula. Cursus risus
+                at ultrices mi tempus imperdiet.
+              </p>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blends Section -->
+      <section class="my-5">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between text-center text-sm-start">
+            <h2 class="mb-4 lh-base line">Our Unique Tea Blends</h2>
+            <div class="d-none d-sm-inline-block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="row g-5">
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+              <img
+                alt="Blends Image 1"
+                src="public/playground_assets/blends1.png"
+                class="mb-4 w-100"
+              />
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-6">White Peony</span>
+                    <small class="colour-picker">Add to Cart
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                    </small>
+                </div>
+                <small class="colour-picker">$37.05</small>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+              <img
+                alt="Blends Image 2"
+                src="public/playground_assets/blends2.png"
+                class="mb-4 w-100"
+              />
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-6">Exotic Tea</span>
+                    <small class="colour-picker">Add to Cart
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                    </small>
+                </div>
+                <small class="colour-picker">$37.05</small>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+              <img
+                alt="Blends Image 3"
+                src="public/playground_assets/blends3.png"
+                class="mb-4 w-100"
+              />
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-6">Yellow Tea</span>
+                    <small class="colour-picker">Add to Cart
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                    </small>
+                </div>
+                <small class="colour-picker">$37.05</small>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-12">
+              <img
+                alt="Blends Image 4"
+                src="public/playground_assets/blends4.png"
+                class="mb-4 w-100"
+              />
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-6">Fruit Tea</span>
+                    <small class="colour-picker">Add to Cart
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                    </small>
+                </div>
+                <small class="colour-picker">$37.05</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Offers Section -->
+      <section class="my-5">
+        <div class="container">
+          <div class="row d-md-flex align-items-center justify-content-between">
+            <div class="col-md-5">
+              <h2 class="mb-4 lh-base line">Popular Offers</h2>
+              <ol class="list-group">
+                <li class="mb-2 d-flex justify-content-between align-items-start">
+                  <div class="me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-start">
+                  <div class="me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-start">
+                  <div class="me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="mb-2 d-flex justify-content-between align-items-start">
+                  <div class="me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+              </ol>
+             </div>
+              <img
+              alt="Offers Image" class="col-md-7 w-50 d-none d-md-block"
+              src="public/playground_assets/offers.png"/>
+          </div>         
+        </div>
+      </section>
+
+      <!-- Signature-flavors -->
+      <section class="my-5">
+        <div class="container">
+          <div class="mb-4 text-center">
+            <h2 class="lh-base line">Discover The Magic Of Tea,
+              <br>
+              Learn About Our Signature Flavors
+            </h2>
+          </div>
+          <div class="row g-3 align-items-center justify-content-between">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <img
+                alt="Flavors Image 1"
+                src="public/playground_assets/flavors1.png"
+                class="col-sm-6"
+                 />
+                <img
+                  alt="Flavors Image 2"
+                  src="public/playground_assets/flavors2.png"
+                  class="col-sm-6"
+                />
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="mb-3">
+                  <strong class="fs-6">100% Organic</strong>
+                  <p class="fs-6 mt-2">
+                    Et malesuada fames ac turpis egestas maecenas pharetra
+                    convallis met nisl purus.
+                  </p>
+              </div>
+              <div class="mb-3">
+                <strong class="fs-6">High Quality</strong>
+                <p class="fs-6 mt-2">
+                  Et malesuada fames ac turpis egestas maecenas pharetra
+                  convallis met nisl purus.
+                </p>
+              </div>
+              <div class="mb-3">
+                <strong class="fs-6">Always Fresh</strong>
+                <p class="fs-6 mt-2">
+                  Et malesuada fames ac turpis egestas maecenas pharetra
+                  convallis met nisl purus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+          <!-- Best selling -->
+      <section class="my-5 text-center text-sm-start position-relative">
+        <div class="container">
+          <div class="mb-5">
+            <h2 class="mb-3 lh-base line">Best Selling</h2>
+            <p class="text-subtitle lead">
+              Get inspired by customer picks &amp; sip the latest &amp;
+              greatest teas.
+            </p>
+          </div>
+          <div class="position-relative">
+            <div class="container-md">
+              <div class="row g-5 align-items-center justify-content-center text-center">
+                <div class="col-xl-3 col-sm-6 col-xs-12">
+                  <img
+                    alt="Best Selling Image 1"
+                    src="public/playground_assets/selling1.png"
+                    class="w-100"
+                  />
+                  <div class="mt-2">
+                      <span class="fs-6 d-block">Black Teas</span>
+                      <span class="colour-picker">$19.85</span>
+                      <div class="colour-picker">
+                          <span>100 g</span>
+                          <span>50 cups</span>
+                          <span>Green Tea</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-xs-12">
+                  <img
+                    alt="Best Selling Image 2"
+                    src="public/playground_assets/selling2.png"
+                    class="w-100 mb-2"
+                  />
+                  <div class="mt-2">
+                      <span class="fs-6 d-block">Oolong Tea</span>
+                      <span class="colour-picker">$19.85</span>
+                      <div class="colour-picker">
+                          <span>100 g</span>
+                          <span>50 cups</span>
+                          <span>Green Tea</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-xs-12">
+                  <img
+                    alt="Rectangle41841"
+                    src="public/playground_assets/selling3.png"
+                    class="w-100 mb-2"
+                  />
+                  <div class="mt-2">
+                      <span class="fs-6 d-block">Matcha</span>
+                      <span class="colour-picker">$19.85</span>
+                    <div class="colour-picker">
+                        <span>100 g</span>
+                        <span>50 cups</span>
+                        <span>Green Tea</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-xs-12">
+                  <img
+                    alt="Best Selling Image 4"
+                    src="public/playground_assets/selling4.png"
+                    class="w-100 mb-2"
+                  />
+                  <div class="mt-2">
+                      <span class="fs-6 d-block">Chamomile</span>
+                      <span class="colour-picker">$19.85</span>
+                      <div class="colour-picker">
+                          <span>100 g</span>
+                          <span>50 cups</span>
+                          <span>Green Tea</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-sm-inline-block">
+              <img
+                alt="Arrow Left"
+                src="public/playground_assets/arrow-right.svg"
+                class="position-absolute top-50 start-0 translate-middle"
+            />
+            <img
+                alt="Arrow Right"
+                src="public/playground_assets/arrow-left.svg"
+                class="position-absolute top-50 start-100 translate-middle"
+            />
+            </div>
+          </div>         
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="my-5 text-center">
+          <div class="container">
+              <h2 class="mb-3 lh-base line">Testimonials</h2>
+              <p class="lead">Read what our customers have to say.</p>
+              <div class="row my-3 g-5">
+                <div class="col-md">
+                  <img
+                    alt="Testimonials avatar 1"
+                    src="public/playground_assets/avatar1.png"
+                  />
+                  <div class="mt-4">
+                      <p class="card-text mb-4 lh-base fw-normal">
+                        Your teas are the best.Ordering is quickly,and
+                        unstressful.Theteas arrive on time and well packed with.
+                      </p>
+                      <Strong class="d-block mb-2">Usa</Strong>
+                      <small>Ravi Shanker</small>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <img
+                    alt="Testimonials avatar 2"
+                    src="public/playground_assets/avatar2.png"
+                  />
+                  <div class="mt-4">
+                      <p class="card-text mb-4 lh-base fw-normal">
+                        Your teas are the best.Ordering is quickly,and
+                        unstressful.Theteas arrive on time and well packed with.
+                      </p>
+                      <Strong class="d-block mb-2">Usa</Strong>
+                      <small>Ravi Shanker</small>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <img
+                    alt="Testimonials avatar 3"
+                    src="public/playground_assets/avatar3.png"
+                  />
+                  <div class="mt-4">
+                      <p class="card-text mb-4 lh-base fw-normal">
+                        Your teas are the best.Ordering is quickly,and
+                        unstressful.Theteas arrive on time and well packed with.
+                      </p>
+                      <Strong class="d-block mb-2">Usa</Strong>
+                      <small>Ravi Shanker</small>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="pagination-container">
+            <span class="pagination-btn active-btn"></span>
+            <span class="pagination-btn"></span>
+            <span class="pagination-btn"></span>         
+          </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="position-relative">
+          <img
+          alt="NewsLetter background"
+          src="public/playground_assets/newsletter-bg.png"
+          class="position-relative w-100"
+        />
+        <div class="container position-absolute top-50 start-50 translate-middle gx-5">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md mb-3">
+              <h2 class="mb-3 lh-base line">Danta Herbs Newsletter</h2>
+              <p class="lead lh-base">
+                Stay upto date with exclusive launches, latest updates and
+                exclusive offers. Sign up and receive 10% OFF on first purchase.
+              </p>
+            </div>
+            <div class="col-md input-group">
+              <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2">
+              <button class="btn btn-dark" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </div>   
+      </section>
+
+      <!-- Footer -->
+      <section class="mt-5">
+        <div class="container">
+          <div class="row g-5 justify-content-between">
+            <div class="col-md-4">
+              <a class="d-block fs-3 fw-bold text-dark text-decoration-none" href="#">Herbal</a>
+              <p class="lead lh-base my-4 fs-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+                <img
+                  alt="Credit Card Images"
+                  src="public/playground_assets/footer-card.png"
+                />
+            </div>
+            <div class="col-md-7">
+              <div class="d-sm-flex justify-content-between">
+                <ul class="lead lh-base fs-6">
+                  <li class="fw-bold fs-5 mb-1">About</li>
+                  <li>About Us</li>
+                  <li>Corporate Gifting</li>
+                  <li>Wholesale &amp; Bulk</li>
+                </ul>
+                <ul class="lead lh-base fs-6">
+                  <li class="fw-bold fs-5 mb-1">Customer Care</li>
+                  <li>Terms And Conditions</li>
+                  <li>Shipping</li>
+                  <li>Privacy Policy</li>
+                  <li>Wholesale &amp; Bulk</li>
+                  <li>Cancellation And Returns</li>
+                  <li>Track Your Order</li>
+                  <li>Faq</li>
+                  <li>Contact Us</li>
+                </ul>
+                <ul class="lead lh-base fs-6">
+                  <li class="fw-bold fs-5 mb-1">Shop By</li>
+                  <li>Loose Tea</li>
+                  <li>Tin Caddy</li>
+                  <li>Gift</li>
+                  <li>Accessories</li>
+                  <li>Single Origin Tea</li>
+                  <li>Straight Tea Blends</li>
+                  <li>Best Selling</li>
+                  <li>Sampler Set</li>
+                </ul>
+              </div>           
+            </div>
+          </div>
+          <p class="h6 my-5 text-center">
+            © Copyright 2022 by Product Ream. All Rights Reserved.
+          </p>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
