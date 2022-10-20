@@ -4,8 +4,8 @@
 https://github.com/Marycorreia12/FD-trainning/tree/main/HERBAL_SITE
 # About the project
 
-This is a front-end development project totally responsive made with HTML5, CSS and and Boostrap5.
+This is a front-end development project totally responsive made with HTML5, CSS and Boostrap5.
 
-[Web](https://github.com/Marycorreia12/assets/blob/main/1.0%20Home%20(Herbal%20Tea)1.jpg)
+![Web](https://github.com/Marycorreia12/assets/blob/main/1.0%20Home%20(Herbal%20Tea)1.jpg)
 
-[Mobile](https://github.com/Marycorreia12/assets/blob/main/mobileHerbal.png)
+![Mobile](https://github.com/Marycorreia12/assets/blob/main/mobileHerbal.png)
