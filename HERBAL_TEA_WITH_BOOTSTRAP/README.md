@@ -1,7 +1,7 @@
 # Shopping Tea Website
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/Marycorreia12/assets/blob/main/LICENSE)
 
-https://github.com/Marycorreia12/FD-trainning/tree/main/HERBAL_SITE
+https://herbalwithbootstrap.netlify.app/
 # About the project
 
 This is a front-end development project totally responsive made with HTML5, CSS and Boostrap5.
