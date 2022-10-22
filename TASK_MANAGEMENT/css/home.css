@@ -20,6 +20,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1, ul, p, h2, h4{
@@ -57,7 +58,8 @@ a{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+    display: block;
 }
 
 ul{
@@ -151,10 +153,6 @@ header{
 
 /* Section 1 */
 
-.heroContents{
-    width: 600px;
-}
-
 .gap{
     gap: 200px;
     margin: 80px 0;
@@ -186,17 +184,28 @@ header{
     cursor: pointer;
 }
 
+.heroImage img{
+    width: 440px;
+}
+
 /* Section 2 */
 
-.spon{
+.sponsorships{
+    max-width: 912px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.spon h2{
+.sponsorships h2{
     margin-bottom: 30px;
 }
 
 /* Section 3 */
+
+.section3Image img{
+    width: 477px;
+    height: 475px;
+}
 
 .section3{
     margin: 80px 0 115px 0;
@@ -209,21 +218,21 @@ header{
     line-height: 30px;
 }
 
-.section3Content .cards .card1, .section3Content .cards .card2{
-    display: flex;
+.section3Content .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin-bottom: 20px;
+    
 }
 
 .section3Content .cards article{
-    width: 280px;
+    width: 268px;
     min-height: 150px;
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     padding: 15px 17px 16px 15px;
 }
-
 
 .section3Content .cards article div{
     display: flex;
@@ -369,23 +378,24 @@ header{
     height: 50px;
 }
 
+.section6 img{
+    width: 383px;
+    height: 463px;
+}
+
 /* Section 7 */
 
-.section7{
-    position: relative;
-    margin: 80px 0;
+.section7_bg{
+    background-image: url('../images/Masking.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .section7Content{
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 120px;
 }
 
 .section7Content .text{
@@ -399,7 +409,8 @@ header{
 
 footer{
     background: #050038;
-    padding: 50px 0;
+    padding: 40px 0;
+    margin-top: 80px;
 }
 
 .social-media-icons{
@@ -411,22 +422,26 @@ footer{
 
 .footer-logo{
     margin-bottom: 60px;
+    flex: 1;
 }
 
 .footer-logo .logo{
     color: var(--white-color);
 }
 
-footer p{
+footer .text-footer{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #DFDEE4;
     opacity: 0.7;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .footer-list.flex{
-    gap: 208px;
+    flex: 2;
+    justify-content: space-around;
 }
 
 .footer-list ul li{
@@ -445,4 +460,344 @@ footer p{
     color: var(--white-color);
 }
 
+@media(max-width: 1024px){
+
+    /* Header */
+
+        
+    .nav ul{
+        gap: 15px;
+    }
+
+    /* Section1 */
+
+    .section1.flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 50px;
+        line-height: 73px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gap{
+        gap: 0;
+    }
+
+    .heroApps{
+       align-items: center;
+       justify-content: center;
+    }
+
+    .heroImage img{
+        display: none;
+    }
+
+    .heroContentsText::after{
+        bottom: 15px;
+        right: 20px;
+    }
+
+    
+    /* Section 3 */
+
+    .section3{
+        margin: 40px 0;
+    }
+
+    .section3.flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section3Image img{
+        display: none;
+    }
+
+    .section3Content .text{
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .section3Content .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .section3Content .cards article{
+        width: 100%;
+        min-height: 100px;
+    }
+
+    /* Section4 */
+
+    .section4{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .section-according-content, .section-according-content h2, .section-according-content p{
+        width: 100%;
+    }
+
+    .section-according-content h2, .section-according-content .text{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .section-according-content .text{
+        line-height: 27px;
+    }
+  
+    /* Section 5 */
+
+    .section5.flex{
+        flex-direction: column;
+    }
+
+    .section5{
+        margin: 40px 0 40px 0;
+    }
+
+    .section5 img{
+        display: none;
+    }
+
+    .section5Content .text{
+        width: 100%;
+        line-height: 27px;
+        margin: 20px 0 14px 0;
+    }
+
+    /* Section 6 */
+
+    .section6Content p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* Section 7 */
+        
+    .section7Content{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .section7Content .text{
+        width: 100%;
+        line-height: 27px;
+        margin: 10px 0 20px 0;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    h1{
+        font-size: 40px;
+        line-height: 53px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+
+    h4{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .text{
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .heroContentsText .text{
+        margin-bottom: 15px;
+    }
+
+    .heroContentsText::after{
+        display: none;
+    }
+
+    .gap{
+        gap: 0;
+    }
+
+    .heroApps{
+       align-items: center;
+       justify-content: center;
+    }
+
+    .heroImage img{
+        display: none;
+    }
+    
+    .heroContentsText::after{
+        bottom: 15px;
+        right: 20px;
+    }
+
+    /* Section 3 */
+    .section3Content .cards article div{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Section 6 */
+    .section6.flex{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .section6 .section6Image img{
+        width: 240px;
+        height: 240px; 
+        text-align: start;  
+    }
+
+    /* Footer */
+    footer{
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    .footer.flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+
+    .footer-list.flex{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .social-media-icons{
+        margin-top: 30px;
+    }
+    
+}
+
+
+@media(max-width: 540px){
+
+    /* Section1 */
+
+    h1{
+        font-size: 32px;
+        line-height: 43px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    /* Section3 */
+
+    .section3Content .text{
+        line-height: 27px;
+    }
+
+    .gap{
+        margin: 40px 0; 
+    }
+
+    .section3Content .cards{
+        grid-template-columns: 1fr;       
+    }
+
+    .section3Content .cards article div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*     Section 4*/
+
+
+    .section-according-content .list li{
+        font-size: 16px;  
+    }
+
+    .section-according-content .list li::after{
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+    }
+    
+    .section-according-content .list li.text-show::after{
+        width: 16px;
+    }
+
+    /* Section 6 */
+
+    .section6Content .userSection .arrowButtons{
+        right: 14px;
+        bottom: 70px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .section6Content .arrowButtons img{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Section 7 */
+
+    .section7Content .text{
+        line-height: 24px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    .footer.flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+
+    .footer-list.flex{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
+    .social-media-icons{
+        margin-top: 30px;
+    }
+
+    footer .text-footer{
+        font-size: 14px;
+    }
+    
+    
+
+
+
+
+}
 
