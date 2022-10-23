@@ -1,10 +1,8 @@
 /* Features section */
+
+/* Section 1 */
 .features-hero-bg{
     position: relative;
-}
-
-.features-hero-bg img{
-    width: 100%;
 }
 
 .features-hero-contents{
@@ -45,17 +43,8 @@
     overflow: hidden;
 }
 
-.section-subtasks .subtasks-image{
-    height: 417px;
-}
-
-.section-subtasks h2{
-    width: 535px;
-}
-
 .section-subtasks .text{
     line-height: 34px;
-    width: 534px;
     margin-bottom: 20px;
 }
 
@@ -101,6 +90,68 @@
     display: flex;
     align-items: center;
     gap: 11px;
+}
+
+@media(max-width: 1024px){
+    
+/* Section 1 */
+
+    .features-video{
+    display: none;
+    }
+
+    /* Section 2 */
+    .section-subtasks img{
+        display: none;
+    }
+
+}
+@media(max-width: 768px){
+    
+    /* Section 1 */    
+    .features-hero-contents h1{
+        font-size: 40px;
+    }
+    
+    .features-hero-contents p{
+        line-height: 27px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 540px){
+
+    /* Section 1 */    
+    
+    .features-hero-contents{
+        position: absolute;
+        top: 16px;
+    }
+
+    .features-hero-contents h1{
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+}
+
+  
+@media(max-width: 340px){
+
+    /* Section 1 */     
+    
+    .features-hero-contents{
+        top: px;
+    }
+    .section-subtasks .text{
+        line-height: 24px;
+    }
+    .features-hero-contents h1{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
 }
 
 
