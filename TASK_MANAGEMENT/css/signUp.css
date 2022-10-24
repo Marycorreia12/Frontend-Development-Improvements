@@ -1,31 +1,49 @@
 .signup{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    min-height: 90vh;
+}
+
+.signUp-image{
+    flex: 3;
+    display: block;
     position: relative;
 }
 
-.signup .signUp-bg{
+.title-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    line-height: 24px;
     width: 100%;
-    height: 100%;
-    display: block;
-    margin-top: 40px;
+    color: var(--white-color);
+    opacity: 0.7;
+    text-align: center;
 }
 
-.signup-form .logo img{
-    width: 18.07px;
-    display: block;
+.signUp-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
 }
 
 .signup-form{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 540px;
-    height: 100%;
+    flex: 1;
     background: var(--white-color);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 80px 36px 80px;
+    padding: 15px 40px 36px 40px;
+}
+
+.signup-form .logo img{
+    width: 18.07px;
+    display: block;
 }
 
 .signup-form h3{
@@ -124,4 +142,96 @@ form .terms-conditions{
     font-size: 12px;
     line-height: 15px;
     color: #B3B3B3;
+}
+
+footer{
+    margin-top: 0;
+}
+
+@media(max-width:1024px){
+    .signup{
+        display: block;
+        min-height: 100vh;
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+        margin-top: 0px;
+    }
+
+    .signUp-image{
+       height: 100%;
+    }
+
+    .title-overlay{
+        display: none;
+    }
+    
+    .signup-form{
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background: none;
+    }
+
+    .signup-form .logo{
+        font-size: 28px;
+        line-height: 30px;
+        color: var(--white-color);
+        margin-right: 20px;
+    }
+        
+    .signup-form .logo img{
+        width: 25px;
+    }
+
+    .signup-form h3{
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--white-color);
+    }
+    
+    .signup-form .profit, .signup-form .profit a{
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--white-color);
+        opacity: 1;
+    }
+
+    .signup-form .profit a{
+        text-decoration: underline;
+    }
+
+    .sign-up-list ul li{
+        color: var(--white-color);
+        opacity: 1;
+        letter-spacing: 1px;
+    }
+    
+    .sign-up-list ul li::before{
+        background: var(--white-color);
+    }
+
+    form .stored-data{
+        color: var(--white-color);
+        opacity: 1;
+    }
+
+    form .terms-conditions,   form .terms-conditions a{
+        color: var(--white-color);
+    }
+
+    form .terms-conditions a{
+        text-decoration: underline;
+    }
+}
+
+@media(max-width:768px){
+    .signup-form{
+        width: 100%;
+        padding: 0 20px;
+        
+    }
 }
