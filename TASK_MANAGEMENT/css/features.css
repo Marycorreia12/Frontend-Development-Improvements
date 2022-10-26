@@ -3,6 +3,7 @@
 /* Section 1 */
 .features-hero-bg{
     position: relative;
+    min-height: 90vh;
 }
 
 .features-hero-contents{
@@ -96,11 +97,21 @@
     
 /* Section 1 */
 
+    .features-hero-bg{
+        position: relative;
+        min-height: 35vh;
+    }
+
     .features-video{
-    display: none;
+        display: none;
     }
 
     /* Section 2 */
+
+    .section-subtasks{
+        margin-top: 40px;
+    }
+
     .section-subtasks img{
         display: none;
     }
@@ -116,6 +127,11 @@
     .features-hero-contents p{
         line-height: 27px;
         width: 100%;
+    }
+
+    .section-subtasks .text{
+        line-height: 27px;
+        margin-bottom: 20px;
     }
 
 }

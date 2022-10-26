@@ -108,19 +108,26 @@
 
     .faq-section2.flex{
         flex-direction: column;   
-        align-items: flex-start; 
+        align-items: center; 
+        text-align: center;
         gap: 20px;
     }
 
     .faq-section3.flex{
         flex-direction: column-reverse;   
-        align-items: flex-start; 
+        align-items: center; 
+        text-align: center;
         gap: 20px;
     }
 
     .faq-section2-contents, .faq-section3-contents{
         width: 100%;
         padding-right: 20px;
+    }
+
+    .faq-section2-contents .text, .faq-section3-contents .text{
+        line-height: 34px;
+        margin-top: 10px;
     }
         
     .faq-section4-title .text{
