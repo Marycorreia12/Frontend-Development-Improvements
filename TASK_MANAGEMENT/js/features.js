@@ -1,6 +1,6 @@
-const accordion = document.querySelectorAll('li');
+const accordionFeatures = document.querySelectorAll('li');
 
-accordion.forEach(item => {
+accordionFeatures.forEach(item => {
     item.addEventListener('click', () =>{
         item.classList.toggle('text-show');
 
