@@ -172,11 +172,6 @@ header .navbar ul li .nactive:hover{
     transition: .2s ease-in-out;
 }
 
-header .cards-info{
-    margin-right: 50px;
-
-}
-
 /* Cart */
 
 .cards-container{
@@ -281,6 +276,10 @@ header .cards-info{
     opacity: 0.5;
     width: 510px;
     margin-bottom: 40px;
+}
+
+.hero-image img{
+    width: 100%;
 }
 
 /* Benefits Section*/
@@ -404,6 +403,10 @@ header .cards-info{
     padding: 0 10px;
 }
 
+.popular-offers-image img{
+    width: 100%;
+}
+
 /* Signature Flavors section */
 
 .signature-flavors{
@@ -414,12 +417,18 @@ header .cards-info{
     margin-top: 40px;
 }
 
-.signature-flavors .flavors-images{
+.signature-flavors .flavors.flex{
     gap: 30px;
 }
 
-.signature-flavors .flavors-contents{
-   width: 473px;
+.signature-flavors .flavors-images img{
+    width: 100%;
+}
+
+.signature-flavors .flavors-images{
+    gap: 30px;
+    width: 100%;
+
 }
 
 .signature-flavors .flavors-contents article h4{
@@ -553,9 +562,6 @@ header .cards-info{
     justify-content: center;
 }
 
-.testimonials-contents .contents{
-    max-width: 100%;
-}
 
 .testimonials-contents div div{
     font-weight: 400;
@@ -625,6 +631,8 @@ header .cards-info{
 .newsletter{
     position: relative;
     overflow: hidden;
+    max-width: 100%;
+    min-height: 100%;
 }
 
 .newsletter img{
@@ -638,10 +646,18 @@ header .cards-info{
    left: 50%;
    transform: translate(-50%, -50%);
    gap: 140px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+  padding: 0 20px;
+}
+
+.newsletter-contents-text{
+    width: 528px;
 }
 
 .newsletter-contents p{
-    width: 528px;
     font-size: 16px;
     line-height: 30px;
     color: var(--black-color);
@@ -652,6 +668,7 @@ header .cards-info{
 form{
     display: inline-flex;
     align-items: center;
+    width: 500px;
 }
 
 form input{
@@ -666,7 +683,7 @@ form input{
     line-height: 17px;
     color: var(--black-color);
     opacity: 0.4;
-    width: 310px;
+    width: 80%;
     height: 65px;
 }
 
@@ -676,7 +693,7 @@ form input:focus{
 }
 
 form .button-form{
-    width: 91px;
+    width: 20%;
     height: 65px;
     background: #27292E;
     border-radius: 0px 12px 12px 0px;
@@ -693,6 +710,15 @@ form .button-form img{
 
 /* Footer section */
 
+.footer.flex{
+    gap: 20px;
+    align-items: start;
+}
+
+.footer-logo{
+    width: 350px;
+}
+
 .footer-logo a{
     font-weight: 600;
     font-size: 36px;
@@ -702,7 +728,6 @@ form .button-form img{
 
 
 .footer-logo p{
-    width: 350px;
     font-weight: 400;
     font-size: 13px;
     line-height: 30px;
@@ -712,7 +737,7 @@ form .button-form img{
 }
 
 .footer-list.flex{
-    gap: 157px;
+    gap: 100px;
     align-items: flex-start;
 }
 
@@ -761,88 +786,62 @@ form .button-form img{
     h2{
         font-size: 26px;
         line-height: 30px;
+    }
+    
+  
+/* Hero */
+        
+    .hero{
+        min-height: 100vh;
+    }
+
+    .hero-contents h1{
+        margin-bottom: 5px;
+    }
+
+    .hero-contents p{
+        font-size: 16px;
+        line-height: 24px;
+        width: 410px;
+        margin-bottom: 20px;
+    }
+
+    .signature-flavors .flavors.flex{
+        flex-direction: column;
+        align-items: start;
+   }
+
+   .newsletter-contents.flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .newsletter-contents-text{
         text-align: center;
+
     }
     
-  
-/* Hero */
-        
-    .hero{
-        min-height: 80vh;
+   .signature-flavors{
+        text-align: start;
     }
 
-    .hero-contents h1{
-        margin-bottom: 5px;
+    .signature-flavors br{
+        display: none;
     }
 
-    .hero-contents p{
-        font-size: 16px;
-        line-height: 24px;
-        width: 410px;
-        margin-bottom: 20px;
-    }
 
-}
-
-@media(max-width: 1023px){
-    h1{
-        font-size: 40px;
-        line-height: 54px;
+    .footer.logo{
         width: 100%;
     }
-    
-    h2{
-        font-size: 26px;
-        line-height: 30px;
-    }
-    
-/* Hero */
-        
-    .hero{
-        min-height: 80vh;
+
+    .footer-list ul li, .footer-logo p{
+        font-size: 12px;
     }
 
-    .hero-contents h1{
-        margin-bottom: 5px;
-    }
-
-    .hero-contents p{
-        font-size: 16px;
-        line-height: 24px;
-        width: 410px;
-        margin-bottom: 20px;
-    }
-
-}
-
-@media(max-width: 1023px){
-    h1{
-        font-size: 40px;
-        line-height: 54px;
-        width: 100%;
-    }
-    
-    h2{
-        font-size: 26px;
-        line-height: 30px;
-    }
-    
-  
-/* Hero */
-        
-    .hero{
-        min-height: 80vh;
-    }
-
-    .hero-contents h1{
-        margin-bottom: 5px;
-    }
-
-    .hero-contents p{
-        font-size: 16px;
-        line-height: 24px;
-        width: 410px;
-        margin-bottom: 20px;
+    .footer-list{
+       align-self: center;
     }
 
 }
@@ -915,11 +914,11 @@ form .button-form img{
     }
     /* Hero */
     .hero{
-        min-height: 60vh;
-        margin-top: 40px;
+        min-height: 40vh;
+        margin-top: 60px;
     }
 
-    .hero img{
+    .hero-image img{
         display: none;
     }
 
@@ -932,15 +931,23 @@ form .button-form img{
     }
 /* Benefits */
         
-    .benefits.flex, .popular-offers.flex, .signature-flavors .flavors.flex, .newsletter-contents.flex, .footer.flex{
+    .benefits.flex, .popular-offers.flex, .signature-flavors .flavors.flex, .footer.flex{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         gap: 20px;
+   }
+
+   .benefits.flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    }
 
     .benefits .benefits-contents{
         margin-top: 20px;
+        width: 100%;
+        text-align: center;
     }
 
     .benefits .benefits-contents p{
@@ -949,29 +956,35 @@ form .button-form img{
         opacity: 0.5;
     }
 
+/*Signature Flavors*/ 
     .signature-flavors .flavors-images{
         margin-bottom: 40px;
     }
 
-    .newsletter-contents{
-        gap: 10px;
-    }
-
-    footer .footer-list.flex{
-        gap: 20px;
+    .popular-offers-image{
+        display: none;
     }
 
     footer.margin-top{
-        margin-top: 0;
+        margin-top: 20px;
     }
-   
+
+    footer .footer-logo p{
+        width: 100%;
+    }
 
 }
 
 
+@media(max-width: 550px){
+
+.signature-flavors .flavors-images{
+    flex-direction: column;
+}
 
 
 
+}
 
 
 
